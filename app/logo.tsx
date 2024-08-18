@@ -1,5 +1,5 @@
 import * as React from "react";
-const LogoComponent = (props) => (
+const LogoComponent = (props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
     <svg
         width={429}
         height={85.165}
