@@ -8,7 +8,7 @@ export default function Home() {
               <LogoComponent />
               <footer className="flex items-center justify-center w-full h-24">
                 Coming soon
-                <Image src="/flower.png" alt="Flower image" width={12} height={16} />
+                <Image className="m-1" src="/clover.svg" alt="Four leaf clover image" width={20} height={16} />
               </footer>
             </div>
         </main>
