@@ -4,6 +4,14 @@ import React from "react";
 import Image from "next/image";
 
 export default function Header() {
+    const scrolltoHash = function (element_id: string) {
+        const element = document.getElementById(element_id);
+        element?.scrollIntoView({
+            behavior: "smooth",
+            block: "end",
+            inline: "nearest",
+        });
+    };
     const [isOpen, setIsOpen] = React.useState(false);
     return (
         <header className="bg-white text-cyan-500 fixed top-0 z-10 w-full sm:flex sm:justify-between sm:items-center sm:px-1 sm:py-3 shadow-md">
@@ -47,13 +55,13 @@ export default function Header() {
             <nav className={`${isOpen ? "block" : "hidden"} sm:block`}>
                 <ul className="px-2 pt-2 pb-4 sm:flex sm:p-0">
                     <li className="block px-2 py-1 font-semibold rounded hover:bg-cyan-200">
-                        <a href="#about">About</a>
+                        <a onClick={() => scrolltoHash("about")}>About</a>
                     </li>
                     <li className="mt-1 block px-2 py-1 font-semibold rounded hover:bg-cyan-200 sm:mt-0 sm:ml-2">
-                        <a href="#experience">Experience</a>
+                        <a onClick={() => scrolltoHash("experience")}>Experience</a>
                     </li>
                     <li className="mt-1 block px-2 py-1 font-semibold rounded hover:bg-cyan-200 sm:mt-0 sm:ml-2">
-                        <a href="#projects">Projects</a>
+                        <a onClick={() => scrolltoHash("projects")}>Projects</a>
                     </li>
                 </ul>
             </nav>
