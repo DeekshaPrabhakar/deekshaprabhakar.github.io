@@ -6,10 +6,10 @@ export default function Home() {
     return (
         <>
             <Header />
-            <main className="flex min-h-screen flex-col justify-between sm:px-4 sm:py-3">
-                  {/* <article
+            <main className="mt-20 sm:mx-4 sm:py-3">
+            <article
                     id="about"
-                    className="flex flex-col items-center justify-center w-full p-8"
+                    className=""
                 >
                     <h2>About</h2>
                     <p>
@@ -71,7 +71,7 @@ export default function Home() {
                 </article>
                 <article
                     id="experience"
-                    className="flex flex-col items-center justify-center w-full p-8"
+                    className=""
                 >
                     <h2>Experience</h2>
                     Senior Software Engineer, AppLovin Jan 2022 - Present -
@@ -90,7 +90,7 @@ export default function Home() {
                     and most successful real time massively multiplayer online
                     games (like Game of War, Mobile Strike, Final Fantasy).
                     Skills: React, Redux, Node.js, PHP, MySQL, Webpack
-                </article> */}
+                </article>
             </main>
             <Footer />
         </>

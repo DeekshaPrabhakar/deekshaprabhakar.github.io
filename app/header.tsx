@@ -6,8 +6,8 @@ import Image from "next/image";
 export default function Header() {
     const [isOpen, setIsOpen] = React.useState(false);
     return (
-        <header className="bg-white text-cyan-500 fixed w-full sm:flex sm:justify-between sm:items-center sm:px-1 sm:py-3">
-            <div className="flex items-center justify-between px-1 py-3">
+        <header className="bg-white text-cyan-500 fixed top-0 z-10 w-full sm:flex sm:justify-between sm:items-center sm:px-1 sm:py-3 shadow-md">
+            <div className="flex items-center justify-between px-1">
                 <div className="flex items-center px-1 py-1 sm:p-0">
                     <Image
                         src="/clover.svg"
