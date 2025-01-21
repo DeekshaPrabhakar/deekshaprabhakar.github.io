@@ -26,10 +26,7 @@ export default function Header() {
                         className="h-12 w-12"
                     />
                     <span>
-                        <h1 className="text-2xl">Deeksha Prabhakar</h1>
-                        <h3 className="text-lg text-cyan-300">
-                            Ideas to Reality
-                        </h3>
+                        <h1 className="text-2xl"> Ideas to Reality</h1>
                     </span>
                 </div>
                 <div className="sm:hidden">

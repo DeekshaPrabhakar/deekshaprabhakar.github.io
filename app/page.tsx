@@ -7,72 +7,53 @@ export default function Home() {
         <>
             <Header />
             <main className="mt-20 sm:mx-4 sm:py-3">
-            <article
-                    id="about"
-                    className=""
-                >
-                    <h2>About</h2>
-                    <p>
-                        I am a software engineer with a passion for building
-                        products that make a difference. I have experience
-                        working with startups and large corporations, and I am
-                        always looking for new opportunities to learn and grow.
-                    </p>
-                    <p>
-                        I was born and brought up in India. My undergrad major
-                        was related to Electronics since I did not like Computer
-                        Science. Generally there are 2 reasons you don't like
-                        something:
-                        <ol>
-                            <li>You do not understand it OR</li>
-                            <li>You are insecure about it.</li>
-                        </ol>
-                        For me it was the former. Luckily during one of the
-                        microprocessor labs while programming a traffic light
-                        control board I discovered my passion for programming.
-                        It was like finding your one true love and everything
-                        fell into its place, mostly 😉
-                    </p>
-                    <p>
-                        Rest is history. I am truly grateful each day that I can
-                        say that <i>I love what I do for a living</i>
-                    </p>
-                    <p>
-                        I like all things efficient, logical and productive. I
-                        love my
-                        <ul>
-                            <li>morning runs 🏃🏻‍♀️</li>
-                            <li>late evening walks 🚶🏻‍♀️</li>
-                            <li>
-                                spirituality and meditation 🧘‍♀️ which helps me
-                                stay true to whom I am and want to be.
-                            </li>
-                        </ul>
-                        Some of my current favorites:
-                        <ul>
-                            <li>
-                                Favorite book: The heart of the Buddha's
-                                teaching by Thich Nhat Hanh
-                            </li>
-                            <li>
-                                Favorite quote: They are forever free who
-                                renounce all selfish desires and break away from
-                                the ego cage of I, Me and Mine" ~source:
-                                "Bhagavat Gita, Chapter 2, Verse 71
-                            </li>
-                            <li>Favorite movie: Swades</li>
-                            <li>Favorite comedian: Kenny Sebastian</li>
-                            <li>
-                                Favorite dessert: Tie between Hot fudge sundae
-                                and Chocolate cake with Mocha Buttercream
-                            </li>
-                        </ul>
-                    </p>
+                <article id="about" className="">
+                    <h1 className="text-8xl m-10 p-10 text-center text-cyan-400">
+                        I'm Deeksha
+                    </h1>
+                    <div>
+                        <div className="details">
+                            <Image
+                                src="/deeksha.jpeg"
+                                alt="Deeksha Prabhakar"
+                                width={200}
+                                height={200}
+                                className="rounded-full"
+                            />
+                        </div>
+                        <div>
+                            <h2>
+                                I am a Full Stack Software Engineer from San
+                                Francisco, CA. I am passionate about building
+                                products that make a difference. 
+                            </h2>
+                            <p className="leading-loose">
+                                I was born and brought up in India. My undergrad
+                                major was related to Electronics since I did not
+                                like Computer Science. Generally there are 2
+                                reasons you don't like something:
+                                <ol>
+                                    <li>You do not understand it OR</li>
+                                    <li>You are insecure about it.</li>
+                                </ol>
+                                </p>
+                                <p className="leading-loose">
+                                For me it was the former. Luckily during one of
+                                the microprocessor labs while programming a
+                                traffic light control board I discovered my
+                                passion for programming. It was like finding
+                                your one true love and everything fell into its
+                                place, mostly 😉
+                            </p>
+                            <p className="leading-loose">
+                                Rest is history. I am truly grateful each day
+                                that I can say that{" "}
+                                <i>I love what I do for a living</i>
+                            </p>
+                        </div>
+                    </div>
                 </article>
-                <article
-                    id="experience"
-                    className=""
-                >
+                <article id="experience" className="">
                     <h2>Experience</h2>
                     Senior Software Engineer, AppLovin Jan 2022 - Present -
                     Architected a data agnostic CS tool saving 200k+ per year in
